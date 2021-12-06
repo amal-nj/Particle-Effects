@@ -3569,7 +3569,19 @@ VisualEffectResource:
         data[0]: -1
         data[1]: -1
         data[2]: -1
-        data[3]: 3
+        data[3]: 1
+      - op: 1
+        valueIndex: 44
+        data[0]: -1
+        data[1]: -1
+        data[2]: -1
+        data[3]: 7
+      - op: 1
+        valueIndex: 45
+        data[0]: -1
+        data[1]: -1
+        data[2]: -1
+        data[3]: 1
       - op: 1
         valueIndex: 46
         data[0]: -1
@@ -3581,25 +3593,13 @@ VisualEffectResource:
         data[0]: -1
         data[1]: -1
         data[2]: -1
-        data[3]: 1
+        data[3]: 7
       - op: 1
         valueIndex: 48
         data[0]: -1
         data[1]: -1
         data[2]: -1
-        data[3]: 7
-      - op: 1
-        valueIndex: 49
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 7
-      - op: 1
-        valueIndex: 50
-        data[0]: -1
-        data[1]: -1
-        data[2]: -1
-        data[3]: 1
+        data[3]: 3
       - op: 1
         valueIndex: 51
         data[0]: -1
@@ -3634,10 +3634,10 @@ VisualEffectResource:
           m_Value: 1.02
         - m_ExpressionIndex: 13
           m_Value: 1.5
+        - m_ExpressionIndex: 22
+          m_Value: 50000
         - m_ExpressionIndex: 24
           m_Value: 0.007
-        - m_ExpressionIndex: 27
-          m_Value: 50000
         - m_ExpressionIndex: 29
           m_Value: 1
       m_Vector2f:
@@ -3662,10 +3662,10 @@ VisualEffectResource:
           m_Value: {x: 1, y: 0, z: 0}
         - m_ExpressionIndex: 21
           m_Value: {x: 0, y: 0, z: 0}
-        - m_ExpressionIndex: 22
-          m_Value: {x: 0, y: 1, z: 0}
-        - m_ExpressionIndex: 28
+        - m_ExpressionIndex: 27
           m_Value: {x: 2, y: 3, z: 2}
+        - m_ExpressionIndex: 28
+          m_Value: {x: 0, y: 1, z: 0}
       m_Vector4f:
         m_Array:
         - m_ExpressionIndex: 17
@@ -3978,16 +3978,7 @@ VisualEffectResource:
     - nameId: spawner_output
       index: 1
     values: []
-    tasks:
-    - type: 268435456
-      buffers: []
-      temporaryBuffers: []
-      values:
-      - nameId: Rate
-        index: 27
-      params: []
-      processor: {fileID: 0}
-      shaderSourceIndex: -1
+    tasks: []
   - type: 0
     flags: 0
     capacity: 0
@@ -4014,7 +4005,16 @@ VisualEffectResource:
     - nameId: spawner_output
       index: 4
     values: []
-    tasks: []
+    tasks:
+    - type: 268435456
+      buffers: []
+      temporaryBuffers: []
+      values:
+      - nameId: Rate
+        index: 22
+      params: []
+      processor: {fileID: 0}
+      shaderSourceIndex: -1
   - type: 1
     flags: 0
     capacity: 50000
@@ -4028,9 +4028,9 @@ VisualEffectResource:
       index: 4
     values:
     - nameId: bounds_center
-      index: 22
-    - nameId: bounds_size
       index: 28
+    - nameId: bounds_size
+      index: 27
     tasks:
     - type: 536870912
       buffers:
@@ -4042,9 +4042,9 @@ VisualEffectResource:
       values: []
       params:
       - nameId: bounds_center
-        index: 22
-      - nameId: bounds_size
         index: 28
+      - nameId: bounds_size
+        index: 27
       processor: {fileID: 0}
       shaderSourceIndex: 0
     - type: 805306368
@@ -4090,9 +4090,9 @@ VisualEffectResource:
       index: 3
     values:
     - nameId: bounds_center
-      index: 22
-    - nameId: bounds_size
       index: 28
+    - nameId: bounds_size
+      index: 27
     tasks:
     - type: 536870912
       buffers:
@@ -4104,9 +4104,9 @@ VisualEffectResource:
       values: []
       params:
       - nameId: bounds_center
-        index: 22
-      - nameId: bounds_size
         index: 28
+      - nameId: bounds_size
+        index: 27
       processor: {fileID: 0}
       shaderSourceIndex: 3
     - type: 805306368
@@ -4150,9 +4150,9 @@ VisualEffectResource:
       index: 2
     values:
     - nameId: bounds_center
-      index: 22
-    - nameId: bounds_size
       index: 28
+    - nameId: bounds_size
+      index: 27
     tasks:
     - type: 536870912
       buffers:
@@ -4164,9 +4164,9 @@ VisualEffectResource:
       values: []
       params:
       - nameId: bounds_center
-        index: 22
-      - nameId: bounds_size
         index: 28
+      - nameId: bounds_size
+        index: 27
       processor: {fileID: 0}
       shaderSourceIndex: 6
     - type: 805306368
@@ -4210,9 +4210,9 @@ VisualEffectResource:
       index: 1
     values:
     - nameId: bounds_center
-      index: 22
-    - nameId: bounds_size
       index: 28
+    - nameId: bounds_size
+      index: 27
     tasks:
     - type: 536870912
       buffers:
@@ -4224,9 +4224,9 @@ VisualEffectResource:
       values: []
       params:
       - nameId: bounds_center
-        index: 22
-      - nameId: bounds_size
         index: 28
+      - nameId: bounds_size
+        index: 27
       processor: {fileID: 0}
       shaderSourceIndex: 9
     - type: 805306368
@@ -4310,7 +4310,7 @@ MonoBehaviour:
   m_InputSlots:
   - {fileID: 8926484042661614557}
   m_OutputSlots: []
-  m_Disabled: 1
+  m_Disabled: 0
 --- !u!114 &8926484042661614557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33172,7 +33172,7 @@ MonoBehaviour:
   m_InputSlots:
   - {fileID: 8926484042661615601}
   m_OutputSlots: []
-  m_Disabled: 0
+  m_Disabled: 1
 --- !u!114 &8926484042661615601
 MonoBehaviour:
   m_ObjectHideFlags: 0
